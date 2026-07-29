@@ -1,0 +1,33 @@
+{
+  "name": "ai-engineering-comparison-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Compare prompt, agentic, and loop engineering on the same buggy Express endpoint.",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:register": "vitest run tests/auth.register.test.js",
+    "lint": "eslint .",
+    "verify": "npm run lint && npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.5",
+    "zod": "^4.0.14"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "eslint": "^9.31.0",
+    "globals": "^16.3.0",
+    "mongodb-memory-server": "^10.1.4",
+    "supertest": "^7.1.4",
+    "vitest": "^3.2.4"
+  }
+}
